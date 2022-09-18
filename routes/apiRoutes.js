@@ -3,13 +3,18 @@ const db = require('../db/db.json');
 const fs = require('fs');
 const { v4: uuidv4 } = require('uuid');
 
-let id = '';
-
-router.get('/api/notes', (req, res) => {
-    res.json(db);
+//`GET /api/notes` should read the `db.json` file and return all saved notes as JSON.
+router.get('/notes', (req, res) => {
+    fs.readFile(db, 'utf8', (error, data) => {
+        if(error){
+            console.log(error);
+            return;
+        }
+        res.json(db);
+    })
 });
 
-router.post('/api/notes', (req, res) => {
+router.post('/notes', (req, res) => {
     req.body.id = uuidv4();
     db.push(req.body);
 
