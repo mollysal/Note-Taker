@@ -1,6 +1,10 @@
 # Note-Taker
-Module 11: Express.js: Note Taker
+Module 11 - Express.js: Note Taker
 
+## Description
+The goal of this assignment was to create a Note Taking application that can write & save notes. It uses Express.js in the back end & it needs to save & retrieve note data from a JSON file. 
+
+The application’s front end was already created. The goal of this assignment was to build the back end & connect the two.
 
 User Story: 
 ```
@@ -9,31 +13,45 @@ I WANT to be able to write and save notes
 SO THAT I can organize my thoughts and keep track of tasks I need to complete
 ```
 
-## Credit
-* Starter Code Provided by UofM Bootcamp (The application’s front end was already created. The goal of this assignment was to build the back end, connect the two.)
-* https://www.geeksforgeeks.org/how-to-build-note-taking-application-using-node-js/ 
+## Contents
+- [Note-Taker](#note-taker)
+  - [Description](#description)
+  - [Contents](#contents)
+  - [Installation](#installation)
+  - [Usage](#usage)
+  - [Resources/Credit](#resourcescredit)
+  - [Features](#features)
+  - [Video](#video)
 
-
-## Notes
-To install run 
+## Installation
+Within the intergrated terminal:
 ```
-npm install express
-npm install uuid
+npm install 
 ```
 
+## Usage
+Once everything is installed, users can start the application by typing the following in the intergrated terminal:
+```md
+node server.js
+```
+This is how the code should look in the intergrated terminal:
+![Intergrated Terminal](./public/assets/images/Terminal.png)
 
-## Getting Started
+This is how the application should look in the web browser:
+![Running Application on Web](./public/assets/images/WebAppRunning.png)
 
-On the back end, the application should include a `db.json` file that will be used to store and retrieve notes using the `fs` module.
+## Resources/Credit
+* Starter Code Provided by UofM Bootcamp 
+* Instructors, TAs, & LAs at UofM Bootcamp
+* Geeks for Geeks: https://www.geeksforgeeks.org/how-to-build-note-taking-application-using-node-js/ 
+* Geeks for Geeks: https://www.geeksforgeeks.org/how-to-read-and-write-json-file-using-node-js/ 
+* Medium.com Blog: https://medium.com/@nnamani.ezinne/simple-note-taking-app-using-node-js-and-ejs-4899321a3342 
 
-The following HTML routes should be created:
 
-* `GET /notes` should return the `notes.html` file.
+## Features
+* Node.js
+* Express.js
+* Javascript
 
-* `GET *` should return the `index.html` file.
-
-The following API routes should be created:
-
-* `GET /api/notes` should read the `db.json` file and return all saved notes as JSON.
-
-* `POST /api/notes` should receive a new note to save on the request body, add it to the `db.json` file, and then return the new note to the client. You'll need to find a way to give each note a unique id when it's saved (look into npm packages that could do this for you).
+## Video
+![Gif Example]()
