@@ -1,5 +1,6 @@
 const router = require('express').Router();
-const db = require('../db/db.json');
+const db = require('./db/db.json');
+const util = require('util');
 const fs = require('fs');
 // UUID (NPM Package) universally unique identifier 
 const { v4: uuidv4 } = require('uuid');
@@ -29,27 +30,21 @@ router.post('/notes', (req, res) => {
 // BONUS TO DO: router.delete()
 // router.delete('/notes/:id', (req, res) => {
 //     //define the dbID varaible as the id parameter
-//     const dbID = JSON.parse(req.params.id);
-//     console.log(dbID);
-//     //Read DB
-//     fs.readFile('../db/db.json', 'utf8', function (error, note) {
-//         if (error) {
-//             return console.log(error);
-//         }
-//         //define the data varable
-//         note = JSON.parse(data);
-//         //filter to the dbID
-//         note = note.filter(val => val.id !== dbID);
+//     //var dbID = JSON.parse(req.params.id);
+//     var DBid = parseInt(req.params.id)
 
-//         //rewrite the db.json without the note removed
-//         fs.writeFile('../db/db.json', 'utf8', function (error, data) {
-//             if (error) {
-//                 return error
-//             }
-//             res.json(note)
-//         })
-//     })   
-// })
+//     for (var i = 0; i < db.length; i++) {
+//         if (db[i].DBid === DBid) {
+//             db.splice(i, 1);
+//         }
+//     }
+
+//     //rewrite the db.json without the note removed
+//     fs.writeFile('../db/db.json', JSON.stringify(db), function (err) {
+//         if (err) throw error;
+//         res.json(db);
+//     })
+// }) 
 
 //read notes
 //filter through notes

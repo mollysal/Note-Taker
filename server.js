@@ -1,8 +1,8 @@
 const express = require('express');
-const apiRoute = require('./routes/apiRoutes');
-const htmlRoute = require('./routes/htmlRoutes');
+const apiRoute = require('./apiRoutes');
+const htmlRoute = require('./htmlRoutes');
 
-const PORT = process.env.port || 3001;
+const PORT = process.env.PORT || 3001;
 const app = express();
 
 // Need access to the public Folder before routes
