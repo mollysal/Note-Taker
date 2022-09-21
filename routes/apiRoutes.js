@@ -27,29 +27,29 @@ router.post('/notes', (req, res) => {
 });
 
 // BONUS TO DO: router.delete()
-router.delete('/notes/:id', (req, res) => {
-    //define the dbID varaible as the id parameter
-    const dbID = JSON.parse(req.params.id);
-    console.log(dbID);
-    //Read DB
-    fs.readFile('../db/db.json', 'utf8', function (error, note) {
-        if (error) {
-            return console.log(error);
-        }
-        //define the data varable
-        note = JSON.parse(data);
-        //filter to the dbID
-        note = note.filter(val => val.id !== dbID);
+// router.delete('/notes/:id', (req, res) => {
+//     //define the dbID varaible as the id parameter
+//     const dbID = JSON.parse(req.params.id);
+//     console.log(dbID);
+//     //Read DB
+//     fs.readFile('../db/db.json', 'utf8', function (error, note) {
+//         if (error) {
+//             return console.log(error);
+//         }
+//         //define the data varable
+//         note = JSON.parse(data);
+//         //filter to the dbID
+//         note = note.filter(val => val.id !== dbID);
 
-        //rewrite the db.json without the note removed
-        fs.writeFile('../db/db.json', 'utf8', function (error, data) {
-            if (error) {
-                return error
-            }
-            res.json(note)
-        })
-    })   
-})
+//         //rewrite the db.json without the note removed
+//         fs.writeFile('../db/db.json', 'utf8', function (error, data) {
+//             if (error) {
+//                 return error
+//             }
+//             res.json(note)
+//         })
+//     })   
+// })
 
 //read notes
 //filter through notes
