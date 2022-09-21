@@ -6,7 +6,10 @@ const { v4: uuidv4 } = require('uuid');
 
 // GET Method - Reading db.json file & returning in JSON format
 router.get('/notes', (req, res) => {
+    //Stephen said this method won't work b/c by the time you push into db the get will be outdated.
     res.json(db);
+    //said to use this for delete method:
+    //fs.readFile('db/db.json', (err, data) => err ? res.status(500).json(err) : res.json(data));
 });
 
 // POST Method - taking a new note & adding it to db.json file & then return the new note to the client
@@ -24,5 +27,27 @@ router.post('/notes', (req, res) => {
 });
 
 // BONUS TO DO: router.delete()
+router.delete('/notes/:id', (req, res) => {
+    //const database = fs.readFileSync('../db/db.json', 'utf8');
+    //const dbID = JSON.parse(database);
+
+
+    var id = req.body.id;
+    //read notes
+    //filter through notes
+    //.then() pass through info
+    //.filter(filter for the deleted note id) - goes through each on 
+    //needs to pass through test 
+    //compare id to deleted notes id
+    //write back to db json file
+
+    for (let i=0; i < db.length; i++) {
+        if(db[i].id === id) {
+            db.splice(i, 1);
+            console.log("Note deleted");
+        }
+    }; 
+    return;
+})
 
 module.exports = router;

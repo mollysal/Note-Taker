@@ -1,61 +1,22 @@
 [
     {
-        "title": "Test Title",
-        "text": "Test text"
-    },
-    {
         "title": "Potatos",
         "text": "testing",
         "id": "3547d929-902a-4198-b4d3-0dfd223adef9"
     },
     {
-        "title": "Potatos",
-        "text": "testing",
-        "id": "231c585f-d001-4ec7-a230-e4ed167c1678"
+        "title": "Node test",
+        "text": "test\n",
+        "id": "014838ed-36d3-4943-9a69-eb8da82e1fd7"
     },
     {
-        "title": "Potatos",
-        "text": "testing",
-        "id": "cb86141e-3e41-4da0-8e95-82fdadc7f3c9"
+        "title": "Testing 7:59",
+        "text": "test",
+        "id": "fda5b666-b04b-4a30-92de-28134c1ca114"
     },
     {
-        "title": "Potatos",
-        "text": "testing",
-        "id": "5e02ac63-9bbb-41a9-a13e-04e05d24bec7"
-    },
-    {
-        "title": "Potatos",
-        "text": "testing",
-        "id": "144df723-f27a-4ca8-a0d3-0179e936cfe2"
-    },
-    {
-        "title": "Potatos",
-        "text": "testing",
-        "id": "575f3d05-55aa-4241-a158-74a84d9bfb1e"
-    },
-    {
-        "title": "Testing",
-        "text": "no idea",
-        "id": "36496887-7147-4f26-b74b-c39896578915"
-    },
-    {
-        "title": "Testing",
-        "text": "testing",
-        "id": "6e7261fd-5f60-4fa9-8a56-f7991bf09ba0"
-    },
-    {
-        "title": "crap",
-        "text": "ugh\n",
-        "id": "727362a8-ffe0-4be2-ae44-dcae0cd0902c"
-    },
-    {
-        "title": "WOW",
-        "text": "I feel dumb",
-        "id": "8526b027-7e06-4d3e-a33b-8ffe35eee4e1"
-    },
-    {
-        "title": "Testing updates",
-        "text": "testing\n",
-        "id": "8645e22b-cd40-4d89-9b7d-28682b602562"
+        "title": "testing",
+        "text": "9:03pm",
+        "id": "c5706991-45b9-4d24-88e3-73af2dcc09f6"
     }
 ]
