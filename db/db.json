@@ -1,27 +1,7 @@
 [
     {
-        "title": "Potatos",
-        "text": "testing",
-        "id": "3547d929-902a-4198-b4d3-0dfd223adef9"
-    },
-    {
-        "title": "Node test",
-        "text": "test\n",
-        "id": "014838ed-36d3-4943-9a69-eb8da82e1fd7"
-    },
-    {
-        "title": "Testing 7:59",
-        "text": "test",
-        "id": "fda5b666-b04b-4a30-92de-28134c1ca114"
-    },
-    {
-        "title": "testing",
-        "text": "9:03pm",
-        "id": "c5706991-45b9-4d24-88e3-73af2dcc09f6"
-    },
-    {
-        "title": "new test",
-        "text": "testing 11:23pm\n",
-        "id": "f105c8d8-8b67-4e29-868b-56b3e3d8518e"
+        "title": "Testing",
+        "text": "Potatos",
+        "id": "55e7479d-baac-47fa-8178-f5b069beea4b"
     }
 ]
