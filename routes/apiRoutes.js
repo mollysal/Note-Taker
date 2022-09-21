@@ -1,5 +1,5 @@
 const router = require('express').Router();
-const db = require('./db/db.json'); //Not Live
+const db = require('../db/db.json'); //Not Live
 const util = require('util');
 const fs = require('fs');
 // UUID (NPM Package) universally unique identifier 
@@ -21,7 +21,7 @@ router.post('/notes', (req, res) => {
 
     // Writting the string to the db.json file
     // The 4 parameter signifys 4 spaces in the JSON file (Easier to Read)
-    fs.writeFile('./db/db.json', JSON.stringify(db, null, 4), function (err) {
+    fs.writeFile('../db/db.json', JSON.stringify(db, null, 4), function (err) {
         if (err) console.log("Error writing file:", err);
         res.json(db);
     })
@@ -33,7 +33,7 @@ router.delete('/notes/:id', (req, res) => {
     const DBid = req.params.id;
     db.splice(DBid, 1);
     //rewrite the db.json without the note removed
-    fs.writeFileSync('./db/db.json', JSON.stringify(db, null, 4));
+    fs.writeFileSync('../db/db.json', JSON.stringify(db, null, 4));
     res.json(req.body);
 })
 
