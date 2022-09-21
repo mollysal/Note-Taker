@@ -28,27 +28,43 @@ router.post('/notes', (req, res) => {
 
 // BONUS TO DO: router.delete()
 router.delete('/notes/:id', (req, res) => {
-    //const database = fs.readFileSync('../db/db.json', 'utf8');
-    //const dbID = JSON.parse(req.params.id);
-    //console.log(dbID);
-    //fs.readFile()
-
-
-    //read notes
-    //filter through notes
-    //.then() pass through info
-    //.filter(filter for the deleted note id) - goes through each on 
-    //needs to pass through test 
-    //compare id to deleted notes id
-    //write back to db json file
-
-    for (let i=0; i < db.length; i++) {
-        if(db[i].id === id) {
-            db.splice(i, 1);
-            console.log("Note deleted");
+    //define the dbID varaible as the id parameter
+    const dbID = JSON.parse(req.params.id);
+    console.log(dbID);
+    //Read DB
+    fs.readFile('../db/db.json', 'utf8', function (error, note) {
+        if (error) {
+            return console.log(error);
         }
-    }; 
-    return;
+        //define the data varable
+        note = JSON.parse(data);
+        //filter to the dbID
+        note = note.filter(val => val.id !== dbID);
+
+        //rewrite the db.json without the note removed
+        fs.writeFile('../db/db.json', 'utf8', function (error, data) {
+            if (error) {
+                return error
+            }
+            res.json(note)
+        })
+    })   
 })
+
+//read notes
+//filter through notes
+//.then() pass through info
+//.filter(filter for the deleted note id) - goes through each on 
+//needs to pass through test 
+//compare id to deleted notes id
+//write back to db json file
+
+// for (let i=0; i < db.length; i++) {
+//     if(db[i].id === id) {
+//         db.splice(i, 1);
+//         console.log("Note deleted");
+//     }
+// }; 
+// return;
 
 module.exports = router;
