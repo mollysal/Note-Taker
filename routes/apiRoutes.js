@@ -29,10 +29,11 @@ router.post('/notes', (req, res) => {
 // BONUS TO DO: router.delete()
 router.delete('/notes/:id', (req, res) => {
     //const database = fs.readFileSync('../db/db.json', 'utf8');
-    //const dbID = JSON.parse(database);
+    //const dbID = JSON.parse(req.params.id);
+    //console.log(dbID);
+    //fs.readFile()
 
 
-    var id = req.body.id;
     //read notes
     //filter through notes
     //.then() pass through info
