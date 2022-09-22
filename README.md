@@ -1,6 +1,8 @@
 # Note-Taker
 Module 11 - Express.js: Note Taker
 
+Deployment: https://mollysalnotetaker.herokuapp.com/ 
+
 ## Description
 The goal of this assignment was to create a Note Taking application that can write & save notes. It uses Express.js in the back end & it needs to save & retrieve note data from a JSON file. 
 
