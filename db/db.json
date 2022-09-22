@@ -1,7 +1,12 @@
 [
     {
-        "title": "Testing",
-        "text": "Potatos",
-        "id": "55e7479d-baac-47fa-8178-f5b069beea4b"
+        "title": "Testing note 2 ",
+        "text": "note 2",
+        "id": "8899093a-afef-4942-b7f8-cb5bab5b2117"
+    },
+    {
+        "title": "note 3",
+        "text": "note 3",
+        "id": "0f26df84-bb78-4d6b-b83d-aa0db7832ea6"
     }
 ]
