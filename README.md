@@ -46,7 +46,7 @@ This is how the application should look in the web browser:
 * Geeks for Geeks: https://www.geeksforgeeks.org/how-to-build-note-taking-application-using-node-js/ 
 * Geeks for Geeks: https://www.geeksforgeeks.org/how-to-read-and-write-json-file-using-node-js/ 
 * Medium.com Blog: https://medium.com/@nnamani.ezinne/simple-note-taking-app-using-node-js-and-ejs-4899321a3342 
-
+* David Hybner: https://github.com/WixkedLuck 
 
 ## Features
 * Node.js
@@ -54,4 +54,4 @@ This is how the application should look in the web browser:
 * Javascript
 
 ## Video
-![Gif Example]()
+![Gif Example](./public/assets/images/Note%20Taker%20DB.gif)
